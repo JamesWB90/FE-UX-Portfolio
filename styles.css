@@ -30,6 +30,7 @@ body {
     margin-right: 20px;
     overflow-x: hidden;
     max-width: 100%;
+    align-items: center;
 }
 
 /* ----------------------Navbar------------------- */
