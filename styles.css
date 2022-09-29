@@ -1027,7 +1027,7 @@ body{
     }
 
     .about p {
-        text-align: start;
+        text-align: center;
     }
 
     .about-img {
@@ -1092,6 +1092,7 @@ body{
         grid-template-columns:1fr;
         padding: 2rem 50px;
         align-content: center;
+        text-align: center;
     }
     
 }
