@@ -771,9 +771,8 @@ body{
 .more-image img {
     width: 340px;
     height: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
-    
     margin-bottom: 2rem;
 }
 
