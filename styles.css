@@ -716,8 +716,10 @@ form textarea {
 
 body{
     overflow-x: hidden;
-    padding: 5px;
+    
 }
+
+
 
 .about-container {
     display: grid;
@@ -726,6 +728,7 @@ body{
     gap: 2rem;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+    padding: 5px;
     
 }
 
@@ -1093,10 +1096,15 @@ body{
     }
 
     .profile-image{
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
     
+/*---------------- about 2 page------------ */
+.more-image{
+    height: 300px;
+    width: 300px;
+}
 }
 /* --------------- Skills MQ ---------- */
 
