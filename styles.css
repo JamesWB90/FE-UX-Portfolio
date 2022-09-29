@@ -6,6 +6,8 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+  
+    
 
 }
 
@@ -27,6 +29,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* ----------------------Navbar------------------- */
@@ -168,6 +171,7 @@ span {
     height: 100%;
     border-radius: 10px;
     margin-left: 300px;
+   
 
 }
 
@@ -710,6 +714,10 @@ form textarea {
 
 /* ------------------------ About Page 2 ---------------------- */
 
+body{
+    overflow-x: hidden;
+}
+
 .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1073,4 +1081,21 @@ form textarea {
     }
     
 }
+
+@media screen  and (max-width: 300px) {
+
+    body{
+
+        overflow-x: hidden;
+        
+
+    }
+
+    .profile-image{
+        height: 200px;
+        width: 200px;
+    }
+    
+}
 /* --------------- Skills MQ ---------- */
+
