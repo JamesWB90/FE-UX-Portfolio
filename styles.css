@@ -716,7 +716,7 @@ form textarea {
 
 body{
     overflow-x: hidden;
-    margin-left: 10px;
+    padding: 5px;
 }
 
 .about-container {
