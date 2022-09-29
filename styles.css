@@ -754,6 +754,7 @@ body{
     color: var(--text2-color);
     font-size: var(--p-font);
     line-height: 20px;
+    padding: 1rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
     line-height: 2rem;
