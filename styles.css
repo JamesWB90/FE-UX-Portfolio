@@ -753,6 +753,7 @@ body{
 .about-more-text p {
     color: var(--text2-color);
     font-size: var(--p-font);
+    text-align: center;
     line-height: 20px;
     padding: 1rem;
     margin-top: 2rem;
