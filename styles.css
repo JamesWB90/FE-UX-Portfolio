@@ -766,7 +766,7 @@ body{
 }
 
 .more-image img {
-    width: 400px;
+    width: 370px;
     height: 100%;
     border-radius: 10px;
     
@@ -1099,12 +1099,8 @@ body{
         height: 300px;
         width: 300px;
     }
+}
     
 /*---------------- about 2 page------------ */
-.more-image{
-    height: 300px;
-    width: 300px;
-}
-}
-/* --------------- Skills MQ ---------- */
 
+/* --------------- Skills MQ ---------- */
