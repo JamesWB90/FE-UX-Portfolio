@@ -167,7 +167,7 @@ span {
 
 .profile-image img {
 
-    width: 400px;
+    width: 350px;
     height: 100%;
     border-radius: 10px;
     margin-left: 300px;
@@ -766,7 +766,7 @@ body{
 }
 
 .more-image img {
-    width: 350px;
+    width: 340px;
     height: 100%;
     border-radius: 10px;
     
@@ -957,7 +957,12 @@ body{
 
 @media (max-width: 830px) {
 
+    body{
 
+        overflow-x: hidden;
+        
+
+}
     #menu-icon {
         display: block;
     }
@@ -1079,6 +1084,12 @@ body{
 }
 /* -------------- Skills MQ ---------- */
 @media screen and (max-width: 650px) {
+    body{
+
+        overflow-x: hidden;
+        
+
+}
     .container{
         grid-template-columns:1fr;
         padding: 2rem 50px;
@@ -1093,12 +1104,7 @@ body{
         overflow-x: hidden;
         
 
-    }
-
-    .profile-image{
-        height: 300px;
-        width: 300px;
-    }
+}
 }
     
 /*---------------- about 2 page------------ */
