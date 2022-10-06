@@ -479,11 +479,14 @@ span {
     transition: all .40s ease;
     cursor: pointer;
     height: 400px;
+    
+    
 }
 
 .box i {
     font-size: 30px;
     color: #7f5af0;
+    margin-top:50px;
 }
 
 .box h3 {
@@ -491,6 +494,7 @@ span {
     font-weight: 600;
     margin: 15px 0;
     transition: all .40s ease;
+    
 }
 
 .box p {
@@ -1177,9 +1181,14 @@ body {
      .profile-image{
  
    
-   margin-left: -42px;
+   margin-left: -32px;
 
   } 
+
+  .box{
+    height: 300px;
+  }
+
 
 }
 
