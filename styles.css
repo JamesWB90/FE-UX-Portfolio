@@ -35,6 +35,8 @@ body {
     color: var(--text-color);
     margin-left: 20px;
     margin-right: 20px;
+    min-height: 100vh;
+    width: 100vw;
     
 
 
