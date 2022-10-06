@@ -7,6 +7,8 @@
     text-decoration: none;
     scroll-behavior: smooth;
    
+    
+   
 
 
 
@@ -27,7 +29,8 @@
 }
 
 body {
-
+    
+   
     background: var(--bg-color);
     color: var(--text-color);
     margin-left: 20px;
@@ -1123,11 +1126,11 @@ body {
 
     }
 
-    .profile-image{
+    /* .profile-image{
  
    
 
-  }
+  } */
 
    .services{
 
