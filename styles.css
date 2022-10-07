@@ -121,6 +121,8 @@ section {
     gap: 2rem;
     
     
+    
+    
 }
 
 .home-text h1 {
@@ -174,12 +176,15 @@ span {
     /* border: 1px solid var(--main-color); */
 }
 
+
+
 .profile-image img {
 
     width: 350px;
     height: 100%;
     border-radius: 10px;
     margin-left: 150px;
+    
 }
 
 
@@ -214,13 +219,18 @@ span {
 /*--------- Socials icons--------- */
 
 /* ---------------------About--------------------------- */
+#about{
+    margin-top: 450px;
+}
 .about {
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+    
     margin-bottom: 5rem;
+    
 
 }
 
@@ -1175,7 +1185,7 @@ body {
 
 
         margin-left: -32px;
-        margin-bottom: 200px;
+        margin-bottom: 400px;
 
     }
 }
@@ -1226,6 +1236,7 @@ body {
 
         display: grid;
         overflow-x: hidden;
+        min-width: 100%;
 
     }
 
@@ -1272,6 +1283,7 @@ body {
 
 
         margin-left: -32px;
+        margin-bottom: 300px;
 
     }
 
