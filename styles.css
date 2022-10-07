@@ -226,7 +226,7 @@ span {
 /* ---------------------About--------------------------- */
 .about {
     overflow-x: hidden;
-    max-width: 100%;
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -524,9 +524,7 @@ span {
 
 /* ---------------------Portfolio----------------------------- */
 
-.portfolio{
-    overflow-x: hidden;
-}
+
 
 .portfolio-content {
     display: grid;
