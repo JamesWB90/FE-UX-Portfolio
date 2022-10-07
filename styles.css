@@ -1227,6 +1227,10 @@ body {
 
     }
 
+    .contact-form{
+        margin-right:10px ;
+    }
+
 
 }
 
@@ -1267,6 +1271,9 @@ body {
         height: 340px;
 
     }
+    .contact-form{
+        margin-right:10px ;
+    }
 
 
 }
@@ -1302,6 +1309,10 @@ body {
 
         height: 340px;
 
+    }
+
+    .contact-form{
+        margin-right:10px ;
     }
 }
 
