@@ -478,7 +478,7 @@ span {
     border-radius: 5px;
     transition: all .40s ease;
     cursor: pointer;
-    height: 400px;
+    height: 300px;
     
     
 }
@@ -536,7 +536,7 @@ span {
     background: #393e46;
     border-radius: 0.5rem;
     transition: all .40s ease;
-    height: 500px;
+     height: 500px; 
 
 
 
@@ -902,6 +902,13 @@ body {
         position: fixed;
     }
 
+
+    .row {
+   
+        height: 400px; 
+   
+   }
+
 }
 
 
@@ -953,6 +960,13 @@ body {
 
     }
 
+
+    .row {
+   
+        height: 400px; 
+   
+   }
+
     /* .about-container{
         grid-template-columns: 1fr;
         margin-top: 20px;
@@ -982,6 +996,12 @@ body {
         grid-template-columns:repeat(2, 1fr);
         padding: 2rem 50px;
     }
+
+    .row {
+   
+        height: 400px; 
+   
+   }
     
 }
 /* -------------- Skills MQ ---------------- */
@@ -1107,6 +1127,12 @@ body {
 
     }
 
+    .row {
+   
+        height: 500px; 
+   
+   }
+
 }
 /* -------------- Skills MQ ---------- */
 @media  (max-width: 650px) {
@@ -1127,6 +1153,11 @@ body {
         text-align: center;
     }
     
+    .row {
+   
+        height: 440px; 
+   
+   }
 }
 
 /* --------------- Skills MQ ---------- */
@@ -1153,9 +1184,13 @@ body {
 
     /* .profile-image{
  
-   
+   } */
 
-  } */
+   .row {
+   
+    height: 350px; 
+
+}
 
    
 }
@@ -1190,6 +1225,12 @@ body {
     height: 300px;
   }
 
+  .row {
+   
+     height: 340px; 
+
+}
+
 
 }
 
@@ -1216,6 +1257,12 @@ body {
     margin-right: 10px;
      margin-left: 5px; 
    }
+
+   .row {
+   
+     height: 340px; 
+
+}
 }
 
 
