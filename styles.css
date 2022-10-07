@@ -115,8 +115,6 @@ header.sticky {
 /* --------------------Home--------------------- */
 section {
 
-    /* margin-top: 10px;
-    margin-bottom: 10px; */
     display: grid;
     align-items: center;
 
@@ -225,7 +223,6 @@ span {
 
 /* ---------------------About--------------------------- */
 .about {
-    overflow-x: hidden;
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -299,7 +296,7 @@ span {
 /* ------------------------Skills-------------------------- */
 
 .inner {
-    overflow-x: hidden;
+    
     padding-top: 20px;
     margin: 15px;
 }
@@ -451,7 +448,7 @@ span {
 /* -------------------Services----------------------------*/
 
 .services{
-    overflow-x: hidden;
+   
 }
 .main-text {
     text-align: center;
@@ -610,7 +607,7 @@ span {
 /* -------------------------Contact---------------------- */
 
 #contact {
-    overflow-x: hidden;
+   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
