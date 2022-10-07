@@ -224,6 +224,8 @@ span {
 
 /* ---------------------About--------------------------- */
 .about {
+    overflow-x: hidden;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -296,6 +298,7 @@ span {
 /* ------------------------Skills-------------------------- */
 
 .inner {
+    overflow-x: hidden;
     padding-top: 20px;
     margin: 15px;
 }
@@ -445,6 +448,10 @@ span {
 /* ------------------------Skills End-------------------------- */
 
 /* -------------------Services----------------------------*/
+
+.services{
+    overflow-x: hidden;
+}
 .main-text {
     text-align: center;
 }
@@ -515,6 +522,11 @@ span {
 /* -------------------Services End----------------------------*/
 
 /* ---------------------Portfolio----------------------------- */
+
+.portfolio{
+    overflow-x: hidden;
+}
+
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -599,6 +611,7 @@ span {
 /* -------------------------Contact---------------------- */
 
 #contact {
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
