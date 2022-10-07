@@ -9,14 +9,6 @@
     text-decoration: none;
     scroll-behavior: smooth;
 
-
-
-
-
-
-
-
-
 }
 
 :root {
@@ -127,7 +119,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    overflow-x: hidden;
+    
     
 }
 
@@ -447,9 +439,7 @@ span {
 
 /* -------------------Services----------------------------*/
 
-.services{
-   
-}
+
 .main-text {
     text-align: center;
 }
@@ -1198,6 +1188,7 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
 
     }
 
@@ -1234,6 +1225,7 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
 
     }
 
@@ -1272,6 +1264,7 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
 
     }
 
