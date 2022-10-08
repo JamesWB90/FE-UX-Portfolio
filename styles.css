@@ -3,11 +3,14 @@
 * {
     padding: 0;
     margin: 0;
+    
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+        outline: 1px solid red;
+    
 
 }
 
@@ -28,8 +31,8 @@ body {
 
     background: var(--bg-color);
     color: var(--text-color);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px; 
     
     overflow: hidden;
     overflow-y: auto;
