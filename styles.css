@@ -1,16 +1,15 @@
-
-
 * {
     padding: 0;
     margin: 0;
-    
+
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-        outline: 1px solid red;
-    
+    /* outline: 1px solid red; */
+
+
 
 }
 
@@ -31,10 +30,10 @@ body {
 
     background: var(--bg-color);
     color: var(--text-color);
-    margin-left: 30px;
-    margin-right: 30px; 
-    
-   
+    margin-left: 20px;
+    margin-right: 20px;
+
+
 
 
 
@@ -50,7 +49,7 @@ header {
     top: 0;
     width: 100%;
     height: 40px;
-    
+
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -125,11 +124,10 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    
-    
-    
-    
 }
+
+
+
 
 .home-text h1 {
     margin: 50px 0;
@@ -187,8 +185,8 @@ span {
     width: 350px;
     height: 100%;
     border-radius: 10px;
-    
-    
+
+
 }
 
 
@@ -216,6 +214,7 @@ span {
     width: 15px;
     margin: 0 auto 60px;
     margin-left: 5px;
+    margin-top: 3rem;
 
     cursor: pointer;
 }
@@ -223,18 +222,19 @@ span {
 /*--------- Socials icons--------- */
 
 /* ---------------------About--------------------------- */
-#about{
+#about {
     margin-top: 450px;
 }
+
 .about {
-    
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    
+
     margin-bottom: 5rem;
-    
+
 
 }
 
@@ -302,7 +302,7 @@ span {
 /* ------------------------Skills-------------------------- */
 
 .inner {
-    
+
     padding-top: 20px;
     margin: 15px;
 }
@@ -611,7 +611,7 @@ span {
 /* -------------------------Contact---------------------- */
 
 #contact {
-   
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -922,7 +922,7 @@ body {
 
     }
 
-    
+
 
 }
 
@@ -945,12 +945,12 @@ body {
         width: 100%;
     }
 
-    .profile-image img {
+    /* .profile-image img {
 
         margin-left: 5px;
 
 
-    }
+    } */
 
     .about {
         grid-template-columns: repeat(2, 1fr);
@@ -971,9 +971,6 @@ body {
 
     #contact {
         grid-template-columns: repeat(2, 1fr);
-
-
-
     }
 
 
@@ -1019,7 +1016,7 @@ body {
 
     }
 
-    .about-text{
+    .about-text {
         margin-top: -550px;
     }
 
@@ -1074,30 +1071,25 @@ body {
         text-align: center;
         margin-right: 100px;
     }
-    
-    .profile-image {
-        
 
-    }
+    .profile-image {}
 
-    .profile-image img {
+    /* .profile-image img {
 
         grid-template-columns: 1fr;
         margin-top: 120px;
         margin-bottom: 50px;
         align-items: center;
-        padding: 10px;
+        
 
-    }
-
-
-    .about {
+    } */
+    p .about {
         grid-template-columns: 1fr;
         text-align: center;
         margin-top: 300px;
     }
 
-    .about-text{
+    .about-text {
         margin-top: 20px;
     }
 
@@ -1193,7 +1185,7 @@ body {
 
     }
 
-   
+
 }
 
 /* --------------- Skills MQ ---------- */
@@ -1204,7 +1196,7 @@ body {
     body {
 
         display: grid;
-        
+
 
     }
 
@@ -1219,13 +1211,13 @@ body {
         margin-left: 5px;
     }
 
-    .profile-image {
+    /* .profile-image {
 
 
         margin-left: -32px;
         margin-bottom: 200px;
 
-    }
+    } */
 
     .row {
 
@@ -1233,8 +1225,8 @@ body {
 
     }
 
-    .contact-form{
-        margin-right:10px ;
+    .contact-form {
+        margin-right: 10px;
     }
 
 
@@ -1246,6 +1238,8 @@ body {
 
         display: grid;
         
+       
+
 
     }
 
@@ -1276,8 +1270,9 @@ body {
         height: 340px;
 
     }
-    .contact-form{
-        margin-right:10px ;
+
+    .contact-form {
+        margin-right: 10px;
     }
 
 
@@ -1287,17 +1282,18 @@ body {
     body {
 
         display: grid;
-        
+
+
 
     }
 
-    .profile-image {
+    /* .profile-image {
 
 
         margin-left: -32px;
         margin-bottom: 300px;
 
-    }
+    } */
 
     .services {
 
@@ -1316,8 +1312,8 @@ body {
 
     }
 
-    .contact-form{
-        margin-right:15px ;
+    .contact-form {
+        margin-right: 15px;
     }
 }
 
