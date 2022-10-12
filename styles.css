@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-     /* outline: 1px solid red;  */
+     outline: 1px solid red;  
 
 
 
@@ -30,8 +30,9 @@ body {
 
     background: var(--bg-color);
     color: var(--text-color);
-    /* margin-left: 10px;
-    margin-right: 30px; */
+    padding: 10px 10px 10px 10px;
+     margin-left: 30px;
+    margin-right: 30px; 
 
 
 
@@ -1192,137 +1193,7 @@ body {
 
 
 
-@media (max-width: 425px) {
-    body {
-
-        display: grid;
-
-
-    }
-
-    .services {
-
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .portfolio {
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    /* .profile-image {
-
-
-        margin-left: -32px;
-        margin-bottom: 200px;
-
-    } */
-
-    .row {
-
-        height: 350px;
-
-    }
-
-    .contact-form {
-        margin-right: 10px;
-    }
-
-
-}
-
-@media (max-width: 360px) {
-
-    body {
-
-        display: grid;
-        
-       
-
-
-    }
-
-    .services {
-
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .portfolio {
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .profile-image {
-
-
-        margin-left: -32px;
-
-    }
-
-    .box {
-        height: 300px;
-    }
-
-    .row {
-
-        height: 340px;
-
-    }
-
-    .contact-form {
-        margin-right: 10px;
-    }
-
-
-}
-
-@media (max-width: 250px) {
-    body {
-
-        display: grid;
-
-
-
-    }
-
-    /* .profile-image {
-
-
-        margin-left: -32px;
-        margin-bottom: 300px;
-
-    } */
-
-    .services {
-
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .portfolio {
-        margin-right: 10px;
-        margin-left: 5px;
-    }
-
-    .row {
-
-        height: 340px;
-
-    }
-
-    .contact-form {
-        margin-right: 15px;
-    }
-}
-
-
-
-
-
-
-
+/* 
 
 
 
