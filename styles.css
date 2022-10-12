@@ -617,7 +617,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
-    padding-bottom: 120px;
+    padding-bottom: 300px;
 
 }
 
@@ -688,7 +688,8 @@ span {
 .contact-form form {
     position: relative;
     margin-top: 20px;
-    margin-bottom: -7rem;
+    margin-bottom: -250px;
+    padding: 20px;
 
 }
 
@@ -1104,7 +1105,7 @@ body {
     }
 
     .about-img :hover {
-        transform: scale(1.10) translateY(-5px);
+        transform: scale(1.1) translateY(-5px);
     }
 
 
@@ -1193,7 +1194,140 @@ body {
 
 
 
-/* 
+ @media (max-width: 425px) {
+    body {
+
+        display: grid;
+
+
+    }
+
+    .services {
+
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .portfolio {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    /* .profile-image {
+
+
+        margin-left: -32px;
+        margin-bottom: 200px;
+
+    } */
+
+    .row {
+
+        height: 350px;
+
+    }
+
+    .contact-form {
+        margin-right: 10px;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+
+    body {
+
+        display: grid;
+        
+       
+
+
+    }
+
+    .services {
+
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .portfolio {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .profile-image {
+
+
+        margin-left: -32px;
+
+    }
+
+    .box {
+        height: 300px;
+    }
+
+    .row {
+
+        height: 340px;
+
+    }
+
+    .contact-form {
+        margin-right: 10px;
+    }
+
+
+}
+
+@media (max-width: 250px) {
+    body {
+
+        display: grid;
+
+
+
+    }
+
+     .profile-image {
+
+        width: 200px;
+        height: 300px;
+        padding-right: 30px;
+
+
+       
+
+    } 
+
+    .services {
+
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .portfolio {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .row {
+
+        height: 340px;
+
+    }
+
+    .contact-form {
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+ 
+
 
 
 
