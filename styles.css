@@ -1202,24 +1202,30 @@ body {
 
     }
 
+    .profile-image {
+
+        width: 250px;
+        height: 350px;
+        padding-left: 30px;
+
+
+       
+
+    } 
+
     .services {
 
         margin-right: 10px;
         margin-left: 5px;
+        padding-right: 25px;
     }
 
     .portfolio {
         margin-right: 10px;
         margin-left: 5px;
+        padding-right: 32px;
+        padding-left: 22px;
     }
-
-    /* .profile-image {
-
-
-        margin-left: -32px;
-        margin-bottom: 200px;
-
-    } */
 
     .row {
 
