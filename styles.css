@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-     /* outline: 1px solid red;   */
+      /* outline: 1px solid red;    */
 
 
 
@@ -881,7 +881,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 450px;
+    /* margin-top: 450px; */
     margin-bottom: 10px;
 
 }
@@ -1200,6 +1200,7 @@ body {
         display: grid;
         overflow-x: hidden;
         max-width: 100%;
+        padding-right: px;
 
 
     }
@@ -1208,9 +1209,14 @@ body {
 
         width: 250px;
         height: 350px;
-        padding-left: 30px;
+        padding-left: 7px;}
 
-
+        .about {
+           padding: 20px;
+        }
+    
+        .about-container {
+        
        
 
     } 
