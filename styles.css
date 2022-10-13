@@ -1217,14 +1217,15 @@ body {
 
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 25px;
+        padding-right: 28px;
+        padding-left: 15px;
     }
 
     .portfolio {
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 32px;
-        padding-left: 22px;
+        padding-right: 30px;
+        padding-left: 15px;
     }
 
     .row {
@@ -1267,14 +1268,15 @@ body {
 
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 25px;
+        padding-right: 28px;
+        padding-left: 15px;
     }
 
     .portfolio {
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 32px;
-        padding-left: 22px;
+        padding-right: 30px;
+        padding-left: 15px;
     }
 
     .box {
@@ -1308,7 +1310,7 @@ body {
 
         width: 250px;
         height: 350px;
-        padding-left: 30px;
+        padding-left: 7px;
 
 
        
@@ -1319,14 +1321,15 @@ body {
 
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 25px;
+        padding-right: 28px;
+        padding-left: 15px;
     }
 
     .portfolio {
         margin-right: 10px;
         margin-left: 5px;
-        padding-right: 32px;
-        padding-left: 22px;
+        padding-right: 30px;
+        padding-left: 15px;
     }
 
     .row {
