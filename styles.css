@@ -1198,6 +1198,8 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
+        max-width: 100%;
 
 
     }
@@ -1247,6 +1249,8 @@ body {
 
         display: grid;
         overflow-x: hidden;
+        max-width: 100%;
+
         
        
 
@@ -1301,6 +1305,8 @@ body {
 
         display: grid;
         overflow-x: hidden;
+        max-width: 100%;
+
 
 
 
