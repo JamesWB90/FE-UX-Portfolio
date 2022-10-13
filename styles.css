@@ -1239,6 +1239,7 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
         
        
 
@@ -1291,6 +1292,7 @@ body {
     body {
 
         display: grid;
+        overflow-x: hidden;
 
 
 
