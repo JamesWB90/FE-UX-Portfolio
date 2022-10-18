@@ -204,7 +204,7 @@ span {
 /* -----Socials icons*/
 
 .side-socials {
-    width: 22px;
+    width: 20px;
     position: fixed;
     top: 50%;
     left: 0;
@@ -216,9 +216,9 @@ span {
 .side-socials img {
     display: block;
     width: 20px;
-    margin: 0 auto 60px;
+    margin: 0 auto 70px;
     margin-left: 5px;
-    margin-top: 3rem;
+   
 
     cursor: pointer;
 }
