@@ -240,6 +240,10 @@ span {
 
 }
 
+.about-text{
+    margin-top:px;
+}
+
 .about-text h4 {
     margin: 10px 0;
     color: var(--main-color);
@@ -1007,7 +1011,9 @@ body {
 
     }
 
-   
+    .about-text {
+        margin-top: -100px;
+    }
 
 }
 
@@ -1079,7 +1085,7 @@ body {
     }
 
     .about-text {
-        margin-top: 20px;
+        margin-top: 250px;
     }
 
 
