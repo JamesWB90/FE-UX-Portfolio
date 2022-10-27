@@ -759,8 +759,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    letter-spacing: 0.5px;
-    word-spacing: 1px;
+   
+    word-spacing: 0.5px;
+    line-height: 20px;
     padding: 5px;
 
 }
