@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
-      /* outline: 1px solid red;      */
+    /* outline: 1px solid red;      */
 
 
 
@@ -31,8 +31,8 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     padding: 10px;
-     margin-left: 10px;
-    margin-right: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
 
 
 
@@ -125,7 +125,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    
+
 }
 
 
@@ -133,7 +133,7 @@ section {
 
 .home-text h1 {
     margin: 50px 0;
-    
+
 
     font-size: var(--h1-font);
     font-weight: bold;
@@ -218,7 +218,7 @@ span {
     width: 22px;
     margin: 0 auto 70px;
     margin-left: 5px;
-   
+
 
     cursor: pointer;
 }
@@ -231,21 +231,22 @@ span {
 .about {
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-
     margin-bottom: 5rem;
+    align-items: center;
 
 
 }
 
-.about-text{
-    margin-top:px;
+.about-text {
+    margin-top: 10px;
+
 }
 
 .about-text h4 {
     margin: 10px 0;
+    text-align: center;
     color: var(--main-color);
     font-size: 20px;
     font-weight: 600;
@@ -253,6 +254,7 @@ span {
 }
 
 .about-text h2 {
+    text-align: center;
     font-size: var(--h2-font);
     padding-top: 1.6rem;
     margin-top: -2rem;
@@ -260,11 +262,14 @@ span {
 }
 
 .about-text p {
+
     color: var(--text2-color);
     font-size: var(--p-font);
     line-height: 20px;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
+
 
 }
 
@@ -275,9 +280,11 @@ span {
     gap: 1rem;
     margin-bottom: 3rem;
 
+
 }
 
 .about-in h5 {
+    text-align: center;
     font-weight: 600;
     font-size: var(--p-font);
 
@@ -286,10 +293,12 @@ span {
 
 
 .about img {
-    width: 250px;
-    height: 250px;
+    object-fit:cover;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
     align-items: center;
+    
     grid-template-columns: repeat(2, 1fr);
 
 
@@ -299,6 +308,9 @@ span {
     transform: scale(1.01) translateY(-5px);
 }
 
+.about-button{
+    align-items: center;
+}
 
 
 
@@ -733,7 +745,7 @@ form textarea {
 }
 
 .contact-form form .submit {
-     margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .contact-list i {
@@ -759,7 +771,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-   
+
     word-spacing: 0.5px;
     line-height: 20px;
     padding: 5px;
@@ -806,6 +818,7 @@ body {
 }
 
 .more-image img {
+    object-fit: cover;
     width: 340px;
     height: 100%;
     padding: 0.5rem;
@@ -905,7 +918,7 @@ body {
 
     }
 
-  
+
 
 
     .row {
@@ -937,20 +950,18 @@ body {
         width: 100%;
     }
 
-    
+
 
     .about {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 3fr);
 
     }
 
     .about p {
-        text-align: start;
-    }
-
-    .about-img {
         text-align: center;
     }
+
+   
 
     .about-img :hover {
         transform: scale(1.01) translateY(-5px);
@@ -1006,12 +1017,12 @@ body {
     .about {
         grid-template-columns: 1fr;
         text-align: center;
-         margin-top: 100px; 
+        margin-top: 100px;
     }
 
     .about-text {
         margin-top: -200px;
-        
+
     }
 
     .about p {
@@ -1070,7 +1081,7 @@ body {
         /* margin-right: 100px; */
     }
 
-   
+
 
     /* .profile-image img {
 
@@ -1081,10 +1092,10 @@ body {
         
 
     } */
-     .about {
+    .about {
         grid-template-columns: 1fr;
         text-align: center;
-         margin-top: 100px; 
+        margin-top: 100px;
     }
 
     .about-text {
@@ -1096,9 +1107,7 @@ body {
         text-align: center;
     }
 
-    .about-img {
-        text-align: center;
-    }
+   
 
     .about-img :hover {
         transform: scale(1.1) translateY(-5px);
@@ -1168,7 +1177,8 @@ body {
     .about {
         grid-template-columns: 1fr;
         text-align: center;
-         margin-top: 100px; 
+        align-items: center;
+        margin-top: 100px;
     }
 
     .about-container {
@@ -1190,7 +1200,7 @@ body {
 
 
 
- @media (max-width: 425px) {
+@media (max-width: 425px) {
     body {
 
         display: grid;
@@ -1205,13 +1215,14 @@ body {
 
         width: 250px;
         height: 350px;
-        padding-left: 7px;}
+        padding-left: 7px;
+    }
 
-        .about {
-           padding: 20px;
-        }
-    
-    .header-text{
+    .about {
+        padding: 20px;
+    }
+
+    .header-text {
         padding: 10px;
     }
 
@@ -1251,11 +1262,11 @@ body {
         overflow-x: hidden;
         max-width: 100%;
 
-        }
+    }
 
-  
 
-    
+
+
 
     .services {
 
@@ -1301,16 +1312,16 @@ body {
 
     }
 
-     .profile-image {
+    .profile-image {
 
         width: 250px;
         height: 350px;
         padding-left: 7px;
 
 
-       
 
-    } 
+
+    }
 
     .services {
 
@@ -1342,7 +1353,7 @@ body {
 
 
 
- 
+
 
 
 
