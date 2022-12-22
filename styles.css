@@ -628,7 +628,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
-    
+    margin-top: 100px;
     padding-bottom: 300px;
 
 }
@@ -646,6 +646,7 @@ span {
 
 .contact-text h2 {
     font-size: var(--h2-font);
+    
     
 }
 
@@ -702,7 +703,7 @@ span {
 .contact-form form {
     position: relative;
     margin-top: 20px;
-    margin-bottom: -250px;
+    margin-bottom: -140px;
     padding-right: 10px;
 
 }
