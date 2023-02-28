@@ -217,6 +217,7 @@ span {
 
 .about-text {
     margin-top: 10px;
+    padding: 100px;
 
 }
 
@@ -266,16 +267,16 @@ span {
 
 }
 
+.about-img{
+    align-items: center;
+    margin-left: 125px;
+}
 
-
-.about img {
+.about-img img {
     object-fit:cover;
     width: 350px;
     height: 350px;
     border-radius: 10px;
-    
-
-
 }
 
 .about-img :hover {
