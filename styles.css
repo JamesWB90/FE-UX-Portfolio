@@ -290,6 +290,7 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 1rem; }
 }
 
 .tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: auto; }
+.feature-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.4rem; }
 .tags li {
     padding: .3rem .75rem; border-radius: 999px;
     background: var(--surface-2); border: 1px solid var(--border);
