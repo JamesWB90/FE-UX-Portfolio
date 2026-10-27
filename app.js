@@ -1,31 +1,60 @@
-const header = document.querySelector("header");
+const header = document.querySelector('#header');
+const menuBtn = document.querySelector('#menu-btn');
+const navLinks = document.querySelector('#nav-links');
+const themeToggle = document.querySelector('#theme-toggle');
 
-// window.addEventListener ("scroll", function(){
-//     header.classList.toggle("sticky",window.scrollY > 0);
-// });
+// Header background once the page has scrolled
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 10);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
-// Hamburger Menu------
+// Mobile menu
+if (menuBtn && navLinks) {
+    const setMenu = (open) => {
+        navLinks.classList.toggle('open', open);
+        menuBtn.setAttribute('aria-expanded', open);
+        menuBtn.querySelector('i').className = open ? 'bx bx-x' : 'bx bx-menu';
+    };
+    menuBtn.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+    navLinks.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+}
 
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x')
-    navbar.classList.toggle('active')
+// Light / dark theme (dark by default, choice remembered)
+const updateThemeIcon = () => {
+    const light = document.documentElement.dataset.theme === 'light';
+    themeToggle.querySelector('i').className = light ? 'bx bx-moon' : 'bx bx-sun';
 };
+if (themeToggle) {
+    updateThemeIcon();
+    themeToggle.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        updateThemeIcon();
+    });
+}
 
-window.onscroll = () =>{
-    menu.classList.remove('bx-x')
-    navbar.classList.remove('active')
-};
+// Reveal sections as they scroll into view
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                io.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el) => io.observe(el));
+} else {
+    revealEls.forEach((el) => el.classList.add('visible'));
+}
 
-const sr = ScrollReveal ({
+// Contact form: send people back to this site's thank-you page after FormSubmit
+const formNext = document.querySelector('#form-next');
+if (formNext) formNext.value = new URL('thankyou.html', window.location.href).href;
 
-    distance: '25px',
-    duration: 1200,
-    reset: true
-})
-
-sr.reveal('.home-text',{delay:100, origin:'bottom'})
-
-sr.reveal('.about,.services,.portfolio,.contact',{delay:150, origin:'bottom'})
+// Footer year
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();

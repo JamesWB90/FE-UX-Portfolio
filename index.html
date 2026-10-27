@@ -3,437 +3,362 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>James Bailey — Front-End Developer &amp; UX Designer</title>
+    <meta name="description" content="James Bailey is a front-end developer and UX designer based in Kent/London, building fast, accessible websites for small businesses.">
+    <meta name="theme-color" content="#0d0f14">
+
+    <link rel="icon" type="image/png" href="images/favlogo2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <link rel="short icon" type="image/png" href="images/favlogo2.png">
-
-
-    <title>James Bailey </title>
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+        document.documentElement.classList.add('js');
+        try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    </script>
 </head>
 
 <body>
-    <!-- header section -->
-    <header>
-        <a href="#" class="logo">James Bailey</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a> </li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- ---------------- Header ---------------- -->
+    <header class="site-header" id="header">
+        <div class="container nav">
+            <a href="#home" class="logo">JB<span>.</span></a>
+
+            <nav class="nav-links" id="nav-links" aria-label="Main">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn btn-small">Let's talk</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle light / dark theme">
+                    <i class='bx bx-sun'></i>
+                </button>
+                <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </div>
+        </div>
     </header>
-    <!-- header section end -->
 
-    <!-- sidebar social Links -->
+    <main id="main">
 
+        <!-- ---------------- Hero ---------------- -->
+        <section class="hero" id="home">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow reveal"><span class="pulse"></span> Available for new projects</p>
+                    <h1 class="reveal">Hi, I'm James.<br>I build <span class="gradient-text">websites that work</span> for small businesses.</h1>
+                    <p class="lead reveal">Front-end developer and UX designer based in Kent / London. I design and build fast, accessible sites — from the first sketch in Figma to a working back end and admin dashboard.</p>
+                    <div class="hero-cta reveal">
+                        <a href="#work" class="btn">See my work <i class='bx bx-down-arrow-alt'></i></a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                    </div>
+                    <ul class="socials reveal" aria-label="Social links">
+                        <li><a href="https://github.com/JamesWB90" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/james-bailey-0668a389/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a></li>
+                        <li><a href="https://www.instagram.com/jamesb.codes/" target="_blank" rel="noopener" aria-label="Instagram"><i class='bx bxl-instagram'></i></a></li>                    </ul>
+                </div>
 
+                <div class="hero-photo reveal">
+                    <img src="images/profile.jpg" alt="James Bailey" width="1600" height="1600">
+                    <div class="float-card">
+                        <i class='bx bx-code-alt'></i>
+                        <div><strong>HTML · CSS · JS</strong><span>Node.js · React · Figma</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="side-socials">
+        <!-- ---------------- About ---------------- -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-text reveal">
+                    <p class="section-label">About me</p>
+                    <h2>From music tech and project management to the web.</h2>
+                    <p>I came to coding later in life. After studying music technology and working in studios, on film sets and in retail, I spent six years as an office admin and project manager for a property developer — and helped set up and brand a local coffee shop. That's where I discovered UX design.</p>
+                    <p>I then trained at the Bath Spa University web development bootcamp and have kept building ever since. Today I make complete websites for small businesses: designed with the user in mind, coded by hand, and backed by simple, secure servers.</p>
+                    <p>Outside work you'll find me at the gym, on a bike, playing guitar, at motorsport track days in a car I built with my brothers — or keeping up with my two kids.</p>
 
+                    <ul class="strengths">
+                        <li><i class='bx bx-bulb'></i> Problem solving</li>
+                        <li><i class='bx bx-palette'></i> Creative ideas</li>
+                        <li><i class='bx bx-task'></i> Project management</li>
+                        <li><i class='bx bx-chip'></i> Technical ability</li>
+                        <li><i class='bx bx-happy'></i> Easy to work with</li>
+                        <li><i class='bx bx-conversation'></i> Client-focused</li>
+                    </ul>
 
-        <a href="https://www.facebook.com/jamesb182" target="_blank"><img src="/images/facebook.png" alt=""></a>
+                    <div class="btn-row">
+                        <a href="About.html" class="btn btn-ghost">More about me</a>
+                        <a href="https://drive.google.com/file/d/14a7RhZTC8EaTYvQxcT4eoz9o8GRVUQzh/view?usp=sharing" class="btn btn-ghost" target="_blank" rel="noopener"><i class='bx bx-file'></i> Résumé</a>
+                    </div>
+                </div>
 
-        <a href="https://www.instagram.com/jamesb.codes/" target="_blank"><img src="/images/instagram (1).png"
-                alt=""></a>
+                <div class="about-gallery reveal" aria-label="Photos from my travels">
+                    <img src="images/Skiing.jpeg" alt="Skiing" loading="lazy">
+                    <img src="images/hobiton.JPG" alt="Hobbiton, New Zealand" loading="lazy">
+                    <img src="images/Aus.JPG" alt="Australia" loading="lazy">
+                    <img src="images/rafting.JPG" alt="White-water rafting" loading="lazy">
+                    <img src="images/Biking.JPG" alt="Mountain biking" loading="lazy">
+                    <img src="images/Harrypotter.JPG" alt="Harry Potter studio tour" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-        <a href="https://www.linkedin.com/in/james-bailey-0668a389/" target="_blank"><img src="/images/linkedin.png"
-                alt=""></a>
+        <!-- ---------------- Work ---------------- -->
+        <section class="section section-alt" id="work">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Selected work</p>
+                    <h2>Recent client-style builds</h2>
+                    <p>Three complete websites, each with a hand-coded front end and a lightweight Node.js back end — no frameworks, no dependencies.</p>
+                </div>
 
-    </div>
+                <!-- To add a live link or repo, fill in the href on the matching "Live site" / "Code" button. -->
+                <div class="featured">
+                    <article class="feature-card reveal">
+                        <div class="feature-media">
+                            <img src="images/projects/meridian.jpg" alt="Meridian & Co. business website homepage" loading="lazy">
+                        </div>
+                        <div class="feature-body">
+                            <p class="feature-kind">Business website</p>
+                            <h3>Meridian &amp; Co.</h3>
+                            <p>A polished site for a business advisory firm — services, process, testimonials and FAQ, with a contact form that feeds a private admin dashboard.</p>
+                            <ul class="feature-list">
+                                <li>Animated stats, testimonial carousel and light / dark theme</li>
+                                <li>Contact &amp; newsletter API with validation, rate limiting and spam honeypot</li>
+                                <li>Token-protected admin: search, filter, update status, export to CSV</li>
+                            </ul>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>REST API</li></ul>
+                        </div>
+                    </article>
 
+                    <article class="feature-card reveal">
+                        <div class="feature-media">
+                            <img src="images/projects/ember-bean.jpg" alt="Ember & Bean coffee shop website homepage" loading="lazy">
+                        </div>
+                        <div class="feature-body">
+                            <p class="feature-kind">Hospitality website</p>
+                            <h3>Ember &amp; Bean</h3>
+                            <p>A warm, inviting site for an independent coffee house and bakery, with a live "open now" badge, tabbed menu and table bookings.</p>
+                            <ul class="feature-list">
+                                <li>Menu with categories, prices and dietary tags loaded from JSON</li>
+                                <li>Photo gallery with keyboard-friendly lightbox and reviews carousel</li>
+                                <li>Booking / events form and an admin dashboard to manage requests</li>
+                            </ul>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Accessibility</li></ul>
+                        </div>
+                    </article>
 
+                    <article class="feature-card reveal">
+                        <div class="feature-media">
+                            <img src="images/projects/common-goods.jpg" alt="Common Goods online store homepage" loading="lazy">
+                        </div>
+                        <div class="feature-body">
+                            <p class="feature-kind">E-commerce</p>
+                            <h3>Common Goods</h3>
+                            <p>A clean, minimal online shop for homeware — product filtering, a slide-out basket and a full checkout flow backed by a real order API.</p>
+                            <ul class="feature-list">
+                                <li>Search, category filters, sorting and stock badges</li>
+                                <li>Basket with free-delivery progress bar and checkout validation</li>
+                                <li>Server re-prices orders and reserves stock; admin shows revenue, orders and stock</li>
+                            </ul>
+                            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>E-commerce</li></ul>
+                        </div>
+                    </article>
+                </div>
 
-    <!-- home -->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h4>Hello</h4>
-            <h1>I<span>'</span>m James <br> Ba<span>iley</span></h1>
-            <h3><span>F</span>ront-<span>E</span>nd <span>D</span>eveloper<span>/</span> <span>U</span>X
-                <span>D</span>esigner
-            </h3>
-            <a href="https://gmail.com"></a>
+                <div class="section-head section-head-sm reveal">
+                    <h3>Earlier projects</h3>
+                    <p>Smaller builds from my bootcamp and self-study.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <img src="images/harrypottrH.png" alt="Harry Potter landing page" loading="lazy">
+                        <div class="project-body">
+                            <h4>Harry Potter landing page</h4>
+                            <p>Responsive landing page with a navbar and image layouts built with flexbox.</p>
+                            <div class="project-links">
+                                <a href="https://harrypotter-project.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/Harry-potter-project" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/BMI.png" alt="BMI calculator" loading="lazy">
+                        <div class="project-body">
+                            <h4>BMI calculator</h4>
+                            <p>Enter your height and weight to get your BMI, built with vanilla JavaScript.</p>
+                            <div class="project-links">
+                                <a href="https://jbbmi-calculator.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/BMI-Calculator-Project" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/reactcontact.png" alt="React contact cards app" loading="lazy">
+                        <div class="project-body">
+                            <h4>React contact app</h4>
+                            <p>Contact cards app built with React components and state.</p>
+                            <div class="project-links">
+                                <a href="https://contact-reactapp-projectjb.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/JBWeb-Dev-Course22/tree/main/Bath%20web%20Dev/week%208/Contact%20App" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/mario.png" alt="Mario sprite animation" loading="lazy">
+                        <div class="project-body">
+                            <h4>Mario animation</h4>
+                            <p>Sprite animation created with SVG images.</p>
+                            <div class="project-links">
+                                <a href="https://mario-spriteimg-project.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/Mario-sprite-project" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/newyork.png" alt="New York CSS animation" loading="lazy">
+                        <div class="project-body">
+                            <h4>New York animation</h4>
+                            <p>A city scene brought to life with pure CSS animation.</p>
+                            <div class="project-links">
+                                <a href="https://new-york-project.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/New-York-Project" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <img src="images/sass.png" alt="Sass design project" loading="lazy">
+                        <div class="project-body">
+                            <h4>Sass design</h4>
+                            <p>Page styled with Sass variables, mixins and partials.</p>
+                            <div class="project-links">
+                                <a href="https://sass-projectjb.netlify.app/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i> Live</a>
+                                <a href="https://github.com/JamesWB90/Sass-project" target="_blank" rel="noopener"><i class='bx bxl-github'></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- Skills ---------------- -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Toolkit</p>
+                    <h2>Skills &amp; tools</h2>
+                    <p>What I use to take a project from idea to launch.</p>
+                </div>
+
+                <ul class="skills reveal">
+                    <li><img src="images/002-html-5.png" alt="">HTML5</li>
+                    <li><img src="images/003-css-3.png" alt="">CSS3</li>
+                    <li><img src="images/004-js.png" alt="">JavaScript</li>
+                    <li><img src="images/007-node-js.png" alt="">Node.js</li>
+                    <li><img src="images/006-physics.png" alt="">React</li>
+                    <li><img src="images/sass (3).png" alt="">Sass</li>
+                    <li><img src="images/005-bootstrap.png" alt="">Bootstrap</li>
+                    <li><img src="images/008-figma.png" alt="">Figma</li>
+                    <li><i class='bx bx-git-branch'></i>Git &amp; GitHub</li>
+                    <li><i class='bx bx-server'></i>REST APIs</li>
+                    <li><i class='bx bx-mobile-alt'></i>Responsive design</li>
+                    <li><i class='bx bx-accessibility'></i>Accessibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ---------------- Services ---------------- -->
+        <section class="section section-alt" id="services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-label">Services</p>
+                    <h2>How I can help</h2>
+                </div>
+
+                <div class="services">
+                    <div class="service reveal">
+                        <i class='bx bx-layout'></i>
+                        <h3>Website design &amp; build</h3>
+                        <p>Custom, responsive websites for small businesses — designed around your customers and built to load fast on any device.</p>
+                    </div>
+                    <div class="service reveal">
+                        <i class='bx bx-cart'></i>
+                        <h3>Online shops &amp; bookings</h3>
+                        <p>Product catalogues, baskets, checkouts and booking forms, with a simple dashboard so you can manage everything yourself.</p>
+                    </div>
+                    <div class="service reveal">
+                        <i class='bx bx-paint'></i>
+                        <h3>UX &amp; UI design</h3>
+                        <p>Wireframes and prototypes in Figma, so we can test ideas and get the experience right before a line of code is written.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------- Contact ---------------- -->
+        <section class="section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-text reveal">
+                    <p class="section-label">Contact</p>
+                    <h2>Let's work together.</h2>
+                    <p>Have a project in mind, or just want to say hello? Send me a message and I'll get back to you.</p>
+                    <ul class="contact-list">
+                        <li><i class='bx bx-envelope'></i><a href="mailto:baileyjames48@gmail.com">baileyjames48@gmail.com</a></li>
+                        <li><i class='bx bx-map'></i>Kent / London, UK</li>
+                    </ul>
+                </div>
+
+                <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/baileyjames48@gmail.com" method="POST">
+                    <input type="hidden" name="_next" id="form-next" value="">
+                    <input type="hidden" name="_subject" value="New message from your portfolio">
+                    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <div class="field-row">
+                        <label>Name
+                            <input type="text" name="Name" autocomplete="name" required>
+                        </label>
+                        <label>Email
+                            <input type="email" name="Email" autocomplete="email" required>
+                        </label>
+                    </div>
+                    <label>Subject
+                        <input type="text" name="Subject" required>
+                    </label>
+                    <label>Message
+                        <textarea name="Message" rows="6" required></textarea>
+                    </label>
+                    <button type="submit" class="btn">Send message <i class='bx bx-send'></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> James Bailey. All rights reserved.</p>
+            <a href="#home" class="back-top">Back to top <i class='bx bx-up-arrow-alt'></i></a>
         </div>
-        <div class="profile-image">
-            <img src="/images/profile.jpg" alt="">
-        </div>
+    </footer>
 
-    </section>
-    <!-- ---------------home end------------------ -->
-
-    <!-- ----------------About------------------ -->
-    <section class="about" id="about">
-
-        <div class="about-text">
-            <h2>About Me</h2>
-            <h4>I'm a Front-End Developer and UX-Designer based in Kent/London.</h4>
-            <p>I’ve always had a keen interest in technology and computing and how it all works which is why
-                I
-                decided learn to code by joining the web development bootcamp with Bath Spa University.<br>
-                <br> In
-                my own time I have also been learning a little about UX design.
-                <br><br>When im not coding you’ll find me In the gym, traveling, enjoying motorsport, gaming
-                and
-                spending time with my family.
-            </p>
-            <div class="about-gri">
-                <div class="about-in">
-                    <h5>1. Problem Solving</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>2. Creative Ideas</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>3. Project Management</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>4. Technical Ability</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>5. Balanced Personality</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>6. Negotiation</h5>
-                </div>
-
-            </div>
-
-          
-                <a href="/About.html" class="btn" target="_blank"> More</a>
-
-                <a href="https://drive.google.com/file/d/14a7RhZTC8EaTYvQxcT4eoz9o8GRVUQzh/view?usp=sharing" class="btn"
-                    target="_blank"> Resume</a>
-            
-
-        </div>
-
-
-
-        <div class="about-img">
-            <img class="img1" src="/images/Harrypotter.JPG" alt="harrypotter">
-            <img class="img2" src="/images/Skiing.jpeg" alt="skiing">
-            <img class="img3" src="/images/hobiton.JPG" alt="Hobiton">
-            <img class="img4" src="/images/Aus.JPG" alt="Aus">
-            <img class="img5" src="/images/rafting.JPG" alt="rafting">
-            <img class="img6" src="/images/Biking.JPG" alt="mountainbiking">
-
-        </div>
-    </section>
-    <!-- ----------------------  About End  ------------------- -->
-
-    <!----------------------------- Skills ------------------------ -->
-
-    <div class="inner">
-        <div class="header">
-            <h2>My Skills</h2>
-        </div>
-        <div class="header-text">
-            <h4>The skills and tools I have learnt to use on my journey to becoming a coder and UX designer.</h4>
-        </div>
-        <div class="container">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/002-html-5.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>HTML 5</h3><span class="bar"><span class="html"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/003-css-3.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>CSS</h3><span class="bar"><span class="html"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/004-js.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/sass (3).png" class="skill-icon" alt="">
-                    </div>
-                    <h3>SASS</h3><span class="bar"><span class="sass"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/007-node-js.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>Node JS</h3><span class="bar"><span class="nodejs"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/005-bootstrap.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>Bootstrap</h3><span class="bar"><span class="bootstrap"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/006-physics.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>React JS</h3><span class="bar"><span class="reactjs"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/008-figma.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>Figma</h3><span class="bar"><span class="figma"></span></span>
-                </div>
-
-            </div>
-
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="skill-img">
-                        <img src="/images/front-end.png" class="skill-icon" alt="">
-                    </div>
-                    <h3>Code / UX</h3><span class="bar"><span class="code/ux"></span></span>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- ----------------- skills End ---------------------------------- -->
-    <!-- --------services section-------- -->
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2>My Services</h2>
-            <h4>Better Design, Better Experiences</h4>
-        </div>
-
-
-        <div class="services-content">
-            <div class="box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Front-End </h3>
-                <p></p>
-            </div>
-
-            <div class="box">
-                <i class='bx bx-paint'></i>
-                <h3>UX Design</h3>
-                <p></p>
-                <!-- <a href="" class="btn"
-                    target="_blank"> UX Portfolio</a> -->
-            </div>
-
-
-            <!-- <div class="box">
-                <h3>Computer Tech </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsam modi sit temporibus,
-                    aspernatur aliquid nesciunt hic sed officiis rerum laudantium atque veritatis quasi ut quo,
-                    voluptatibus officia deserunt. Distinctio.</p>
-            </div> -->
-        </div>
-
-    </section>
-
-    <!-- --------services section End-------- -->
-
-    <!-- --------- Portfolio ----------------- -->
-
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2>My Portfolio</h2>
-            <h4>Better Design, Better Experiences</h4>
-        </div>
-
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="/images/harrypottrH.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Harry Potter HP</h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/Harry-potter-project" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-
-                        <a href="https://harrypotter-project.netlify.app/#" target="_blank"><i
-                                class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>This is a landing page with a navbar, with variety of text and images displayed using
-                    flexbox.</h3>
-            </div>
-
-            <div class="row">
-                <img src="/images/BMI.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>BMI Calculator</h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/BMI-Calculator-Project" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://jbbmi-calculator.netlify.app/" target="_blank"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>This is Bmi calculator made using HTML, CSS, JS. to input height and weight data to get you BMI
-                    results.</h3>
-            </div>
-
-            <div class="row">
-                <img src="/images/mario.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Mario animation</h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/Mario-sprite-project" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://mario-spriteimg-project.netlify.app/" target="_blank"><i
-                                class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>Animation created with SVG images</h3>
-            </div>
-
-            <div class="row">
-                <img src="/images/newyork.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>New York Animation </h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/New-York-Project" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://new-york-project.netlify.app/" target="_blank"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>Animation using CSS</h3>
-            </div>
-
-            <div class="row">
-                <img src="/images/sass.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Sass</h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/Sass-project" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://sass-projectjb.netlify.app/" target="_blank"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>Sass Design project</h3>
-            </div>
-
-            <div class="row">
-                <img src="/images/reactcontact.png" alt="">
-
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>React App</h6>
-                    </div>
-                    <div class="row-icon">
-                        <a href="https://github.com/JamesWB90/JBWeb-Dev-Course22/tree/main/Bath%20web%20Dev/week%208/Contact%20App"
-                            target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://contact-reactapp-projectjb.netlify.app/" target="_blank"><i
-                                class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                <h3>Contact cards App</h3>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- --------- Portfolio End ----------------- -->
-
-    <!--------------------- Contact------------------ -->
-
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact Me</h2>
-            <h4>Let's Work Together</h4>
-            <p>Click to Email</p>
-            <div class="contact-list">
-                <li><a href="#">James Bailey - Kent/London</a></li>
-                <li><a href="mailto:baileyjames48@gamil.com">baileyjames48@gmail.com </a></li>
-            </div>
-
-            <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/james-bailey-0668a389/" target="_blank""><i class='bx bxl-linkedin'></i></a>
-                <a href=" https://www.facebook.com/jamesb182/" target="_blank""><i class='bx bxl-facebook'></i></a>
-                <a href=" https://www.instagram.com/jamesb.codes/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <form action="https://formsubmit.co/baileyjames48@gmail.com" method="POST" />
-            <input type="name" name="Name" placeholder=" Full Name" required>
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
-            <input type="email" name="Email" placeholder="Enter Your E-mail" required>
-            <input type="subject" name="Subject" placeholder="Enter Your Subject" Subject" required>
-            <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-            <input type="submit" name="" value="Submit" class="send" required>
-            </form>
-
-        </div>
-    </section>
-
-    <div class="footer-2">
-        <p>Copyright © 2022 James Bailey All Rights Reserved.</p>
-    </div>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-
-
-
-
-    <script type="text/javascript" src="/app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
